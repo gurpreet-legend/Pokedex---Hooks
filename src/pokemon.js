@@ -1,8 +1,10 @@
+// import React from "react";
+
 export const pokemon = [
     {id: 1, name: "bulbasaur", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"},
     {id: 2, name: "ivysaur", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"},
     {id: 3, name: "venusaur", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"},
-    {id: 4, name: "charmander", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"},
+    {id: 4, name: "charmander", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"},
     {id: 5, name: "charmeleon", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"},
     {id: 6, name: "charizard", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"},
     {id: 7, name: "squirtle", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"},
@@ -22,97 +24,65 @@ export const pokemon = [
     {id: 21, name: "spearow", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"},
     {id: 22, name: "fearow", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"},
     {id: 23, name: "ekans", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"},
-    // {id: 1, name: "arbok", image: "https://pokeapi.co/api/v2/pokemon/24/"},
-    // {id: 1, name: "pikachu", image: "https://pokeapi.co/api/v2/pokemon/25/"},
-    // {id: 1, name: "raichu", image: "https://pokeapi.co/api/v2/pokemon/26/"},
-    // {id: 1, name: "sandshrew", image: "https://pokeapi.co/api/v2/pokemon/27/"},
-    // {id: 1, name: "sandslash", image: "https://pokeapi.co/api/v2/pokemon/28/"},
-    // {id: 1, name: "nidoran-f", image: "https://pokeapi.co/api/v2/pokemon/29/"},
-    // {id: 1, name: "nidorina", image: "https://pokeapi.co/api/v2/pokemon/30/"},
-    // {id: 1, name: "nidoqueen", image: "https://pokeapi.co/api/v2/pokemon/31/"},
-    // {id: 1, name: "nidoran-m", image: "https://pokeapi.co/api/v2/pokemon/32/"},
-    // {id: 1, name: "nidorino", image: "https://pokeapi.co/api/v2/pokemon/33/"},
-    // {id: 1, name: "nidoking", image: "https://pokeapi.co/api/v2/pokemon/34/"},
-    // {id: 1, name: "clefairy", image: "https://pokeapi.co/api/v2/pokemon/35/"},
-    // {id: 1, name: "clefable", image: "https://pokeapi.co/api/v2/pokemon/36/"},
-    // {id: 1, name: "vulpix", image: "https://pokeapi.co/api/v2/pokemon/37/"},
-    // {id: 1, name: "ninetales", image: "https://pokeapi.co/api/v2/pokemon/38/"},
-    // {id: 1, name: "jigglypuff", image: "https://pokeapi.co/api/v2/pokemon/39/"},
-    // {id: 1, name: "wigglytuff", image: "https://pokeapi.co/api/v2/pokemon/40/"},
-    // {id: 1, name: "zubat", image: "https://pokeapi.co/api/v2/pokemon/41/"},
-    // {id: 1, name: "golbat", image: "https://pokeapi.co/api/v2/pokemon/42/"},
-    // {id: 1, name: "oddish", image: "https://pokeapi.co/api/v2/pokemon/43/"},
-    // {id: 1, name: "gloom", image: "https://pokeapi.co/api/v2/pokemon/44/"},
-    // {id: 1, name: "vileplume", image: "https://pokeapi.co/api/v2/pokemon/45/"},
-    // {id: 1, name: "paras", image: "https://pokeapi.co/api/v2/pokemon/46/"},
-    // {id: 1, name: "parasect", image: "https://pokeapi.co/api/v2/pokemon/47/"},
-    // {id: 1, name: "venonat", image: "https://pokeapi.co/api/v2/pokemon/48/"},
-    // {id: 1, name: "venomoth", image: "https://pokeapi.co/api/v2/pokemon/49/"},
-    // {id: 1, name: "diglett", image: "https://pokeapi.co/api/v2/pokemon/50/"},
-    // {id: 1, name: "dugtrio", image: "https://pokeapi.co/api/v2/pokemon/51/"},
-    // {id: 1, name: "meowth", image: "https://pokeapi.co/api/v2/pokemon/52/"},
-    // {id: 1, name: "persian", image: "https://pokeapi.co/api/v2/pokemon/53/"},
-    // {id: 1, name: "psyduck", image: "https://pokeapi.co/api/v2/pokemon/54/"},
-    // {id: 1, name: "golduck", image: "https://pokeapi.co/api/v2/pokemon/55/"},
-    // {id: 1, name: "mankey", image: "https://pokeapi.co/api/v2/pokemon/56/"},
-    // {id: 1, name: "primeape", image: "https://pokeapi.co/api/v2/pokemon/57/"},
-    // {id: 1, name: "growlithe", image: "https://pokeapi.co/api/v2/pokemon/58/"},
-    // {id: 1, name: "arcanine", image: "https://pokeapi.co/api/v2/pokemon/59/"},
-    // {id: 1, name: "poliwag", image: "https://pokeapi.co/api/v2/pokemon/60/"},
-    // {id: 1, name: "poliwhirl", image: "https://pokeapi.co/api/v2/pokemon/61/"},
-    // {id: 1, name: "poliwrath", image: "https://pokeapi.co/api/v2/pokemon/62/"},
-    // {id: 1, name: "abra", image: "https://pokeapi.co/api/v2/pokemon/63/"},
-    // {id: 1, name: "kadabra", image: "https://pokeapi.co/api/v2/pokemon/64/"},
-    // {id: 1, name: "alakazam", image: "https://pokeapi.co/api/v2/pokemon/65/"},
-    // {id: 1, name: "machop", image: "https://pokeapi.co/api/v2/pokemon/66/"},
-    // {id: 1, name: "machoke", image: "https://pokeapi.co/api/v2/pokemon/67/"},
-    // {id: 1, name: "machamp", image: "https://pokeapi.co/api/v2/pokemon/68/"},
-    // {id: 1, name: "bellsprout", image: "https://pokeapi.co/api/v2/pokemon/69/"},
-    // {id: 1, name: "weepinbell", image: "https://pokeapi.co/api/v2/pokemon/70/"},
-    // {id: 1, name: "victreebel", image: "https://pokeapi.co/api/v2/pokemon/71/"},
-    // {id: 1, name: "tentacool", image: "https://pokeapi.co/api/v2/pokemon/72/"},
-    // {id: 1, name: "tentacruel", image: "https://pokeapi.co/api/v2/pokemon/73/"},
-    // {id: 1, name: "geodude", image: "https://pokeapi.co/api/v2/pokemon/74/"},
-    // {id: 1, name: "graveler", image: "https://pokeapi.co/api/v2/pokemon/75/"},
-    // {id: 1, name: "golem", image: "https://pokeapi.co/api/v2/pokemon/76/"},
-    // {id: 1, name: "ponyta", image: "https://pokeapi.co/api/v2/pokemon/77/"},
-    // {id: 1, name: "rapidash", image: "https://pokeapi.co/api/v2/pokemon/78/"},
-    // {id: 1, name: "slowpoke", image: "https://pokeapi.co/api/v2/pokemon/79/"},
-    // {id: 1, name: "slowbro", image: "https://pokeapi.co/api/v2/pokemon/80/"},
-    // {id: 1, name: "magnemite", image: "https://pokeapi.co/api/v2/pokemon/81/"},
-    // {id: 1, name: "magneton", image: "https://pokeapi.co/api/v2/pokemon/82/"},
-    // {id: 1, name: "farfetchd", image: "https://pokeapi.co/api/v2/pokemon/83/"},
-    // {id: 1, name: "doduo", image: "https://pokeapi.co/api/v2/pokemon/84/"},
-    // {id: 1, name: "dodrio", image: "https://pokeapi.co/api/v2/pokemon/85/"},
-    // {id: 1, name: "seel", image: "https://pokeapi.co/api/v2/pokemon/86/"},
-    // {id: 1, name: "dewgong", image: "https://pokeapi.co/api/v2/pokemon/87/"},
-    // {id: 1, name: "grimer", image: "https://pokeapi.co/api/v2/pokemon/88/"},
-    // {id: 1, name: "muk", image: "https://pokeapi.co/api/v2/pokemon/89/"},
-    // {id: 1, name: "shellder", image: "https://pokeapi.co/api/v2/pokemon/90/"},
-    // {id: 1, name: "cloyster", image: "https://pokeapi.co/api/v2/pokemon/91/"},
-    // {id: 1, name: "gastly", image: "https://pokeapi.co/api/v2/pokemon/92/"},
-    // {id: 1, name: "haunter", image: "https://pokeapi.co/api/v2/pokemon/93/"},
-    // {id: 1, name: "gengar", image: "https://pokeapi.co/api/v2/pokemon/94/"},
-    // {id: 1, name: "onix", image: "https://pokeapi.co/api/v2/pokemon/95/"},
-    // {id: 1, name: "drowzee", image: "https://pokeapi.co/api/v2/pokemon/96/"},
-    // {id: 1, name: "hypno", image: "https://pokeapi.co/api/v2/pokemon/97/"},
-    // {id: 1, name: "krabby", image: "https://pokeapi.co/api/v2/pokemon/98/"},
-    // {id: 1, name: "kingler", image: "https://pokeapi.co/api/v2/pokemon/99/"},
-    // {id: 1, name: "voltorb", image: "https://pokeapi.co/api/v2/pokemon/100/"}
+    {id: 24, name: "arbok", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"},
+    {id: 25, name: "pikachu", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"},
+    {id: 26, name: "raichu", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"},
+    {id: 27, name: "sandshrew", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"},
+    {id: 28, name: "sandslash", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"},
+    {id: 29, name: "nidoran-f", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"},
+    {id: 30, name: "nidorina", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"},
+    {id: 31, name: "nidoqueen", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"},
+    {id: 32, name: "nidoran-m", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"},
+    {id: 33, name: "nidorino", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"},
+    {id: 34, name: "nidoking", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"},
+    {id: 35, name: "clefairy", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"},
+    {id: 36, name: "clefable", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"},
+    {id: 37, name: "vulpix", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"},
+    {id: 38, name: "ninetales", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"},
+    {id: 39, name: "jigglypuff", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"},
+    {id: 40, name: "wigglytuff", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"},
+    {id: 41, name: "zubat", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"},
+    {id: 42, name: "golbat", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"},
+    {id: 43, name: "oddish", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"},
+    {id: 44, name: "gloom", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"},
+    {id: 45, name: "vileplume", image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"}
 ]
 
+// export class fetchPokemon extends React.Component {
+//     state = {
+//         loading: true,
+//         pokemon: null
+//     };
 
-// async function fetchPokemon() {
-//     const image = `https://pokeapi.co/api/v2/pokemon?limit=150`;
-//     const res = await fetch(image);
-//     const data = await res.json();
-//     const poke = data.results.map((result_data, index) => ({
-//         name: result_data.name,
-//         id: index + 1,
-//         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`
-//     }));
-//     return poke;
-// };
+//     async componentDidMount() {
+//         const url = `https://pokeapi.co/api/v2/pokemon?limit=150`;
+//         const res = await fetch(url);
+//         const data = await res.json();
+//         const myArr = data.results.map((result_data, index) => ({
+//             id: index + 1,
+//             name: result_data.name,
+//             image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`
+//         }))
+//         console.log(myArr);
+//         this.setState({pokemon: myArr, loading: false})
+//     };
+
+    // render() {
+    //     return (
+    //         <div>
+    //             {this.state.loading || !this.state.pokemon ? (
+    //             <div>loading...</div> 
+    //             ) : (
+    //                 <div>
+    //                     <div>{this.state.pokemon.image}</div>
+    //                     <div>{this.state.pokemon.name}</div>
+    //                     <div>{this.state.pokemon.id}</div>
+    //                 </div>
+    //             ) }
+    //         </div>
+    //     )
+    // }
+// }
 
 // let pokemon = fetchPokemon();
 // export default pokemon;
