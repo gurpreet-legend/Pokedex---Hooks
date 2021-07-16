@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'tachyons';
+import Card from './Card.js';
+import {pokemon} from './pokemon.js'
 import reportWebVitals from './reportWebVitals';
 
+
 ReactDOM.render(
-  <React.StrictMode>  
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Card id={pokemon[1].id} name={pokemon[1].name} image={pokemon[1].image}/>
+    <Card id={pokemon[2].id} name={pokemon[2].name} image={pokemon[2].image}/>
+    <Card id={pokemon[3].id} name={pokemon[3].name} image={pokemon[3].image}/>
+    <Card id={pokemon[4].id} name={pokemon[4].name} image={pokemon[4].image}/>
+    <Card id={pokemon[5].id} name={pokemon[5].name} image={pokemon[5].image}/>
+    <Card id={pokemon[6].id} name={pokemon[6].name} image={pokemon[6].image}/>
+    <Card id={pokemon[7].id} name={pokemon[7].name} image={pokemon[7].image}/>
+  </div>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
