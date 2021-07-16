@@ -1,15 +1,20 @@
 import React from 'react';
 import Card from './Card.js';
 
-const Cardlist = ({pokemon}) => {
-    const Cardcomponent = pokemon.map((poke, i) => {
+const Cardlist = ({pokemons}) => {
+    const cardsArray = pokemons.map((poke, i) => {
         return (
-            <Card id={pokemon[i].id} name={pokemon[i].name} image={pokemon[i].image}/>
+            <Card 
+                key={pokemons[i].id} 
+                id={pokemons[i].id} 
+                name={pokemons[i].name} 
+                image={pokemons[i].image}
+            />
         )
     })
     return (
-        <div>
-            {Cardcomponent}
+        <div className="grid">
+            {cardsArray}
         </div>
     )
 }
