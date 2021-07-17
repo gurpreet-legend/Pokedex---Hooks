@@ -1,6 +1,7 @@
 import React from 'react';
 import Cardlist from './Cardlist.js';
 import Searchbar from './Searchbar.js';
+import Scroll from './Scroll.js';
 import 'tachyons';
 
 class App extends React.Component {
@@ -28,7 +29,7 @@ class App extends React.Component {
     }
     
     async componentDidMount () {
-        const url = "https://pokeapi.co/api/v2/pokemon?limit=150";
+        const url = "https://pokeapi.co/api/v2/pokemon?limit=898";
         const res = await fetch(url);
         const data = await res.json();
         const myArr = data.results.map((result_data, index) => ({
@@ -54,7 +55,9 @@ class App extends React.Component {
                 <div className="tc">
                     <h1 className="f1">Pokedex</h1>
                     <Searchbar searchChange = {this.onSearchChange}/>
-                    <Cardlist pokemons = {filteredPokemons}/>
+                    <Scroll>
+                        <Cardlist pokemons = {filteredPokemons}/>
+                    </Scroll>
                 </div>
             );
         }
