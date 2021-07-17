@@ -1,5 +1,4 @@
 import React from 'react';
-import 'tachyons';
 
 const Card = (props) => {
     const {name, id, image} = props;
