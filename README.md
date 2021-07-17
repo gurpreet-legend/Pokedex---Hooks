@@ -1,13 +1,18 @@
 # Pokedex
 
-## Available Scripts
+## 🔗 Host link
+> <a href="https://gurpreet-legend.github.io/Pokedex/" target="_blank">https://gurpreet-legend.github.io/Pokedex/</a>
+## 🛠 Tech
+> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://img.icons8.com/color/48/000000/javascript.png"/> </a>
+<a href="https://www.w3.org/html/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/html-5.png"/> </a> 
+<a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://img.icons8.com/color/48/000000/css3.png"/> </a> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.icons8.com/ultraviolet/40/000000/react--v2.png"/> </a>
 
-In the project directory, you can run:
+## 📜 Available Scripts
+
+> In the project directory, you can run this command in the terminal :
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> Runs the app in the development mode.\
+> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
