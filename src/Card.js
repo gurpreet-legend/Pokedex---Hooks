@@ -7,7 +7,7 @@ const Card = (props) => {
         <div className="tc bg-light-green dib br3 pa3 ma2 grow bw-2 shadow-5 measure card">
             <img src={image} alt="Pokemon" />
             <div>
-                <h2>{name}</h2>
+                <h2>{name[0].toUpperCase() + name.substring(1)}</h2>
                 <p>{id}</p>
             </div>
         </div>

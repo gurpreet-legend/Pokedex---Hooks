@@ -7,6 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: radial-gradient(circle, #47C3FF, #2E66EB); */
+  background: linear-gradient(to left, rgba(7, 27, 82, 1), rgba(1, 128, 128,1));
 }
 
 code {
@@ -24,4 +26,13 @@ code {
 h1{
   font-family: "Pokemon";
   color: red;
+}
+
+.searchbar{
+  outline: none;
+}
+
+.searchbar:focus::placeholder {
+  color: transparent;
+  width: 60vw;
 }
