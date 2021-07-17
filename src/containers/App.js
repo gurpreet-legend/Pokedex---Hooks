@@ -2,6 +2,7 @@ import React from 'react';
 import Cardlist from '../components/Cardlist.js';
 import Searchbar from '../components/Searchbar.js';
 import Scroll from '../components/Scroll.js';
+import ErrorBoundary from '../components/ErrorBoundary.js';
 import 'tachyons';
 
 class App extends React.Component {
@@ -47,7 +48,9 @@ class App extends React.Component {
                     <h1 className="f1">Pokedex</h1>
                     <Searchbar searchChange = {this.onSearchChange}/>
                     <Scroll>
-                        <Cardlist pokemons = {filteredPokemons}/>
+                        <ErrorBoundary>
+                            <Cardlist pokemons = {filteredPokemons}/>
+                        </ErrorBoundary>
                     </Scroll>
                 </div>
             );
