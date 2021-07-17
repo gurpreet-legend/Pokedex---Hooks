@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
-
 @font-face {font-family: "Pokemon Solid";
   src: url("./fonts/f4d1593471d222ddebd973210265762a.eot"); /* IE9*/
   src: url("./fonts/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -16,7 +14,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: radial-gradient(circle, #47C3FF, #2E66EB); */
   background: linear-gradient(to left, rgba(7, 27, 82, 1), rgba(1, 128, 128,1));
 }
 
