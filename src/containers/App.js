@@ -1,7 +1,7 @@
 import React from 'react';
-import Cardlist from './Cardlist.js';
-import Searchbar from './Searchbar.js';
-import Scroll from './Scroll.js';
+import Cardlist from '../components/Cardlist.js';
+import Searchbar from '../components/Searchbar.js';
+import Scroll from '../components/Scroll.js';
 import 'tachyons';
 
 class App extends React.Component {
@@ -12,16 +12,6 @@ class App extends React.Component {
             searchField : ''
         }
     }
-
-    /*NOTE : Here 'this' refers to the element that received the event and that element is input of Searchbar*/
-    /*onSearchChange(event) {
-        const filteredPokemons = this.pokemons.filter((pokemon) => {
-            return pokemon.name.toLowerCase().includes(this.state.searchField.toLowerCase());
-        })
-        // console.log(event.target.value);
-        console.log(filteredPokemons);
-    }*/
-
 
     /*To make 'this' refering to the App class, change the function to arrow function syntax*/
     onSearchChange = (event) => {
@@ -41,11 +31,12 @@ class App extends React.Component {
     }
 
     render() {
-        const filteredPokemons = this.state.pokemons.filter((pokemons) => {
-            return pokemons.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+        const {pokemons, searchField} = this.state;
+        const filteredPokemons = pokemons.filter(pokemon => {
+            return pokemon.name.toLowerCase().includes(searchField.toLowerCase());
         })
 
-        if(this.state.pokemons.length === 0){
+        if(!pokemons.length){
             return (
                 <h1 className="f1">Loading...</h1>
             )
