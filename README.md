@@ -13,5 +13,3 @@ Do give it a star ⭐ if you like it :)
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.icons8.com/ultraviolet/40/000000/react--v2.png"/> </a>
 <a href="https://redux.js.org/" target="_blank"><img src="https://img.icons8.com/color/48/000000/redux.png"/> </a>
 <br>
-
-test
