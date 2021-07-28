@@ -5,7 +5,7 @@ import Scroll from '../components/Scroll.js';
 import ErrorBoundary from '../components/ErrorBoundary.js';
 import 'tachyons';
 
-function App() {
+function App (props) {
 
     const [pokemons, setPokemons] = useState([]);
     const [searchField, setSearchField] = useState('');
@@ -15,6 +15,7 @@ function App() {
     }
 
     useEffect(async () => {
+        console.log(props.store);
         const url = "https://pokeapi.co/api/v2/pokemon?limit=898";
         const res = await fetch(url);
         const data = await res.json();
