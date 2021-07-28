@@ -2,7 +2,7 @@ import { CHANGE_SEARCH_FIELD } from "./constants";
 
 const intialState = {
     searchField: ''
-}
+} 
 
 export const searchPokemons = (state= intialState, action={}) => {
     switch (action.type) {

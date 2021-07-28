@@ -1,18 +1,34 @@
 import React, {useState, useEffect} from 'react';
+import {connect} from 'react-redux';
 import Cardlist from '../components/Cardlist.js';
 import Searchbar from '../components/Searchbar.js';
 import Scroll from '../components/Scroll.js';
 import ErrorBoundary from '../components/ErrorBoundary.js';
 import 'tachyons';
 
+import {setSearchField} from '../actions';
+
+const mapStateToProps = (state) => {
+    return {
+        searchField: state.searchField
+    }
+ }
+
+ const mapDispatchToProps = (dispatch) => {
+     return {
+         onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+     }
+ }
+
 function App (props) {
 
     const [pokemons, setPokemons] = useState([]);
-    const [searchField, setSearchField] = useState('');
+    // STATE DECLARATION USING HOOKS :
+    // const [searchField, setSearchField] = useState('');
 
-    const onSearchChange = (event) => {
-        setSearchField(event.target.value) ;
-    }
+    // const onSearchChange = (event) => {
+    //     setSearchField(event.target.value) ;
+    // }
 
     useEffect(async () => {
         console.log(props.store);
@@ -30,7 +46,7 @@ function App (props) {
     //It's just a shortcut for componentDidMount
 
     const filteredPokemons = pokemons.filter(pokemon => {
-        return pokemon.name.toLowerCase().includes(searchField.toLowerCase());
+        return pokemon.name.toLowerCase().includes(props.searchField.toLowerCase());
     })
 
     return(
@@ -40,7 +56,7 @@ function App (props) {
         (
             <div className="tc">
                 <h1 className="f1">Pokedex</h1>
-                <Searchbar searchChange = {onSearchChange}/>
+                <Searchbar searchChange = {props.onSearchChange}/>
                 <Scroll>
                     <ErrorBoundary>
                         <Cardlist pokemons = {filteredPokemons}/>
@@ -51,4 +67,4 @@ function App (props) {
     )
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App) ;
