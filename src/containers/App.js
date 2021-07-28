@@ -6,52 +6,42 @@ import Scroll from '../components/Scroll.js';
 import ErrorBoundary from '../components/ErrorBoundary.js';
 import 'tachyons';
 
-import {setSearchField} from '../actions';
+import {setSearchField, requestPokemons} from '../actions';
 
 const mapStateToProps = (state) => {
     return {
-        searchField: state.searchField
+        searchField: state.searchPokemons.searchField,
+        isPending: state.setPokemons.isPending,
+        pokemons: state.setPokemons.pokemons,
+        error: state.setPokemons.error
     }
  }
 
  const mapDispatchToProps = (dispatch) => {
      return {
-         onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+         onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+         onRequestPokemons: () => dispatch(requestPokemons())
      }
  }
 
 function App (props) {
 
-    const [pokemons, setPokemons] = useState([]);
-    // STATE DECLARATION USING HOOKS :
+    // STATE DECLARATION USING HOOKS WITHOUT USING REDUX:
+    // const [pokemons, setPokemons] = useState([]);
     // const [searchField, setSearchField] = useState('');
 
-    // const onSearchChange = (event) => {
-    //     setSearchField(event.target.value) ;
-    // }
-
     useEffect(async () => {
-        console.log(props.store);
-        const url = "https://pokeapi.co/api/v2/pokemon?limit=898";
-        const res = await fetch(url);
-        const data = await res.json();
-        const myArr = data.results.map((result_data, index) => ({
-            id: index + 1,
-            name: result_data.name,
-            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`
-        }))
-        setPokemons(myArr);
+        props.onRequestPokemons();
     },[])
     //For breaking the continuos loop of calling useEffect, leave the array empty here so that useEffect only gets called when App renders once useEffect changes
     //It's just a shortcut for componentDidMount
 
-    const filteredPokemons = pokemons.filter(pokemon => {
+    const filteredPokemons = props.pokemons.filter(pokemon => {
         return pokemon.name.toLowerCase().includes(props.searchField.toLowerCase());
     })
 
     return(
-
-        (!pokemons.length) ?
+        (props.isPending) ?
             <h1 className="f1">Loading...</h1> :
         (
             <div className="tc">
