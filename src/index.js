@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './containers/App.js';
 import {searchRobots} from './reducers'
 
-const store = createStore(searchRobots);
+const store = createStore(searchPokemons);
 
 ReactDOM.render(
   <Provider store= {store}>
