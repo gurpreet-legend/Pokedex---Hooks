@@ -5,12 +5,12 @@ import {createStore} from 'react';
 import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './containers/App.js';
-import {searchRobots} from './reducers'
+import {searchPokemons} from './reducers.js'
 
 const store = createStore(searchPokemons);
 
 ReactDOM.render(
-  <Provider store= {store}>
+  <Provider store={store}>
     <App />
   </Provider>, 
   document.getElementById('root')
