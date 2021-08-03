@@ -1,6 +1,7 @@
 # Pokedex - (Hooks & Redux)
 Wanna visit those old pokemon days, check out my Pokedex, where you can search all of your beloved Pokemons <br> (and your favourite Pikachu as well (✿◡‿◡) ). <br>
 Do give it a star ⭐ if you like it :)
+I have updated my React app with Hooks and Redux.
 
 ## 🔗 Host link
 > <a href="https://gurpreet-legend.github.io/Pokedex---Hooks/" target="_blank">https://gurpreet-legend.github.io/Pokedex---Hooks/</a>
